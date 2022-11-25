@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.TC_005_WhatsNew">
+      <class name="TestCases.TC_004_RemoveToCart">
         <methods>
+          <include name="checkRemoveToCart"/>
           <include name="setUp"/>
-          <include name="checkWhatsNewFeature"/>
           <include name="CloseBrowser"/>
+          <include name="captureScreenShot"/>
         </methods>
-      </class> <!-- TestCases.TC_005_WhatsNew -->
+      </class> <!-- TestCases.TC_004_RemoveToCart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

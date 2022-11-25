@@ -13,7 +13,9 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -39,17 +41,33 @@ public class BaseClass {
 	public void CloseBrowser() {
 		driver.close();
 	}
+
+	@AfterMethod
+	public void captureScreenShot(ITestResult res) throws IOException {
+		int status = res.getStatus();
+		String testCaseName = res.getName();
+		if (status == 2) {
+			screenShot(driver, testCaseName);
+		}
+
+	}
 	
-	
-	
-	protected String userName = "gk11@gmail.com";
-	protected String password = "Ganesha.11";
-     
-	protected String appUrl = "https://magento.softwaretestingboard.com/";
+	public static void screenShot(WebDriver driver, String tname) throws IOException {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		File target = new File(System.getProperty("user.dir") + ".\\screenshots\\" + tname + ".png");
+		FileUtils.copyFile(source, target);
+	}
 
 	
 	
 	
+	
+
+	protected String userName = "gk11@gmail.com";
+	protected String password = "Ganesha.11";
+
+	protected String appUrl = "https://magento.softwaretestingboard.com/";
 
 	public String randomestring() {
 		String generatedString = RandomStringUtils.randomAlphabetic(8);
@@ -61,12 +79,6 @@ public class BaseClass {
 		return (Integer.parseInt(generatedString2));
 	}
 
-	public void captureScreen(WebDriver driver, String tname) throws IOException {
-		TakesScreenshot ts = (TakesScreenshot) driver;
-		File source = ts.getScreenshotAs(OutputType.FILE);
-		File target = new File(System.getProperty("user.dir") + ".\\screenshots\\" + tname + ".png");
-		FileUtils.copyFile(source, target);
-	}
 
 	public void scrollDownPage(WebDriver driver) {
 

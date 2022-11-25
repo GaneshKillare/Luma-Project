@@ -6,13 +6,14 @@
   </listeners>
   <test thread-count="5" name="Luma Test(failed)">
     <classes>
-      <class name="TestCases.TC_002_LogIn">
+      <class name="TestCases.TC_004_RemoveToCart">
         <methods>
-          <include name="checkLogIn"/>
+          <include name="checkRemoveToCart"/>
           <include name="setUp"/>
           <include name="CloseBrowser"/>
+          <include name="captureScreenShot"/>
         </methods>
-      </class> <!-- TestCases.TC_002_LogIn -->
+      </class> <!-- TestCases.TC_004_RemoveToCart -->
     </classes>
   </test> <!-- Luma Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

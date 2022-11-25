@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 15 10:33:06 IST 2022</td>
+<td>Started on:</td><td>Fri Nov 25 13:59:58 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>163 seconds (163470 ms)</td>
+<tr><td>Total time:</td><td>105 seconds (105701 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,19 +76,58 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestCases.TC_002_LogIn.checkLogIn()'><b>checkLogIn</b><br>Test class: TestCases.TC_002_LogIn</td>
-<td><div><pre>java.lang.AssertionError: expected [Welcome, Killare!] but found [Welcome, Ganesh Killare!]
-	at TestCases.TC_002_LogIn.checkLogIn(TC_002_LogIn.java:27)
+<td title='TestCases.TC_004_RemoveToCart.checkRemoveToCart()'><b>checkRemoveToCart</b><br>Test class: TestCases.TC_004_RemoveToCart</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.107)
+Build info: version: &apos;4.0.0-beta-3&apos;, revision: &apos;5d108f9a67&apos;
+System info: host: &apos;GANESHA&apos;, ip: &apos;192.168.236.190&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1d33e414236d9ecc344ffa523fd6586d, clickElement {id=5b812bb7-e876-4961-974b-f04938dd8913}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\TEMP\scoped_dir15324_328...}, goog:chromeOptions: {debuggerAddress: localhost:50172}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50172/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1d33e414236d9ecc344ffa523fd6586d)] -&gt; xpath: //a[@title=&apos;Remove item&apos;]]
+Session ID: 1d33e414236d9ecc344ffa523fd6586d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:198)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:237)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:75)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
+	at pOM.Jackets.clickRemoveToCart(Jackets.java:53)
+	at TestCases.TC_004_RemoveToCart.checkRemoveToCart(TC_004_RemoveToCart.java:49)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace825605925", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace825605925'><pre>java.lang.AssertionError: expected [Welcome, Killare!] but found [Welcome, Ganesh Killare!]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at TestCases.TC_002_LogIn.checkLogIn(TC_002_LogIn.java:27)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1969958288", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1969958288'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.107)
+Build info: version: &apos;4.0.0-beta-3&apos;, revision: &apos;5d108f9a67&apos;
+System info: host: &apos;GANESHA&apos;, ip: &apos;192.168.236.190&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1d33e414236d9ecc344ffa523fd6586d, clickElement {id=5b812bb7-e876-4961-974b-f04938dd8913}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\TEMP\scoped_dir15324_328...}, goog:chromeOptions: {debuggerAddress: localhost:50172}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50172/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1d33e414236d9ecc344ffa523fd6586d)] -&gt; xpath: //a[@title=&apos;Remove item&apos;]]
+Session ID: 1d33e414236d9ecc344ffa523fd6586d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:198)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:237)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
+	at pOM.Jackets.clickRemoveToCart(Jackets.java:53)
+	at TestCases.TC_004_RemoveToCart.checkRemoveToCart(TC_004_RemoveToCart.java:49)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -116,8 +155,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>9</td>
-<td>TestCases.TC_002_LogIn@477b4cdf</td></tr>
+<td>45</td>
+<td>TestCases.TC_004_RemoveToCart@198b6731</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -128,20 +167,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestCases.TC_001_CreateNewAC.CreateAC()'><b>CreateAC</b><br>Test class: TestCases.TC_001_CreateNewAC</td>
-<td></td>
-<td>11</td>
-<td>TestCases.TC_001_CreateNewAC@3cd3e762</td></tr>
-<tr>
 <td title='TestCases.TC_003_AddToCart.checkAddToCartFunctionaly()'><b>checkAddToCartFunctionaly</b><br>Test class: TestCases.TC_003_AddToCart</td>
 <td></td>
 <td>31</td>
-<td>TestCases.TC_003_AddToCart@3b0090a4</td></tr>
+<td>TestCases.TC_003_AddToCart@489115ef</td></tr>
 <tr>
-<td title='TestCases.TC_004_RemoveToCart.checkRemoveToCart()'><b>checkRemoveToCart</b><br>Test class: TestCases.TC_004_RemoveToCart</td>
+<td title='TestCases.TC_001_CreateNewAC.CreateAC()'><b>CreateAC</b><br>Test class: TestCases.TC_001_CreateNewAC</td>
 <td></td>
-<td>73</td>
-<td>TestCases.TC_004_RemoveToCart@1fa121e2</td></tr>
+<td>10</td>
+<td>TestCases.TC_001_CreateNewAC@3857f613</td></tr>
+<tr>
+<td title='TestCases.TC_002_LogIn.checkLogIn()'><b>checkLogIn</b><br>Test class: TestCases.TC_002_LogIn</td>
+<td></td>
+<td>11</td>
+<td>TestCases.TC_002_LogIn@179ece50</td></tr>
 </table><p>
 </body>
 </html>
